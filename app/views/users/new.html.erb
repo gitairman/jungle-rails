@@ -1,0 +1,18 @@
+
+<section class="user-registration">
+
+  <header class="page-header">
+    <h1>User &raquo; Registration</h1>
+  </header>
+
+  <%= form_for :user, url: '/users' do |f| %>
+
+    <pre>Name:                  <%= f.text_field :name %></pre>
+    <pre>Email:                 <%= f.text_field :email %></pre>
+    <pre>Password:              <%= f.password_field :password %></pre>
+    <pre>Password Confirmation: <%= f.password_field :password_confirmation %></pre>
+    <pre><%= f.submit "Submit" %></pre>
+
+  <% end %>
+
+</section>
