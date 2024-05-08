@@ -9,7 +9,7 @@
       </thead>
       <tbody>
         <% @products.each_with_index do |item, i| %>
-          <%= render 'line_item', product: item, quantity: @line_items[i][:quantity].to_i %>
+          <%= render 'orders/line_item', product: item, quantity: @line_items[i][:quantity].to_i %>
         <% end %>
       </tbody>
       <tfoot>
